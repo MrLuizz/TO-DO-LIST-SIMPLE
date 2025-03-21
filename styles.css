@@ -5,14 +5,19 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     outline: none;
 
-    
-}
-body {
-    background-image: url(/img/fundo\ 2.jpg);
-    background-size: 150vh 70vw;
-    background-repeat: no-repeat;
 
 }
+
+body {
+    background-image: url(/img/fundo\ 2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    min-width: 50vw;
+
+}
+
 .container {
     background-color: rgb(218, 218, 218);
     width: 600px;
@@ -80,8 +85,44 @@ img {
 .tasks:hover img {
     opacity: 1;
 }
+
 .done {
     background-color: greenyellow;
     text-decoration: line-through;
 }
 
+@media (max-width: 440px) {
+    .container {
+        max-width: 150px;
+        font-size: 10px;
+        margin: 50px auto;
+
+    }
+
+    .button-add-task {
+        height: 40px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+
+    .input-task {
+        width: 115px;
+        font-size: 10px;
+
+    }
+
+    .tasks {
+        margin-bottom: 10px;
+    }
+
+    .list-tasks {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 956px) {
+        .container {
+            max-width: 250px;
+        }
+
+    }
+}
