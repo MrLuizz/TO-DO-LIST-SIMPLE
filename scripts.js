@@ -26,7 +26,7 @@ function mostrartarefas() {
     
 
     <li class="tasks ${item.concluida && "done"}">
-        <img src="bi bi-check-circle-fill">" alt="check-na-tarefa" onclick= "concluirtarefa(${posicao})">
+       <i class="bi bi-check-circle-fill"></i>" alt="check-na-tarefa" onclick= "concluirtarefa(${posicao})">
         <p>${item.tarefa}</p>
         <img src="/img/trash.png" alt="tarefa-para-lixo" onclick="deletaritem(${posicao})">
     </li>
